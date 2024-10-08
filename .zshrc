@@ -114,6 +114,7 @@ source $ZSH/oh-my-zsh.sh
 
 # alias 
 alias vim="nvim"
+alias ide="~/.scripts/ide.sh"
 
 # zsh-autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#666'
