@@ -128,13 +128,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 cd
 git clone https://github.com/yabasaba/dotfiles.git
 chmod +x ~/dotfiles/install.sh
-~/dotfiles/install.she
-chsh -s /bin/zsh
+source ~/dotfiles/install.sh
 ```
 
-※ プロンプトを再起動
-
-```
-vim
-```
+restart terminal
 
