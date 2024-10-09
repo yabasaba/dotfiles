@@ -110,14 +110,13 @@ new-item lua/yababa/lazy.lua
 
 ```
 sudo apt update
-sudo apt install neovim
-sudo apt install build-essential
-sudo apt install fzf
+sudo apt install neovim build-essential fzf git
 ```
 
 ## zsh setup
 
 ```
+sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k &&
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -129,14 +128,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 cd
 git clone https://github.com/yabasaba/dotfiles.git
 chmod +x ~/dotfiles/install.sh
-~/dotfiles/install.sh
-sudo apt install git zsh
+~/dotfiles/install.she
 chsh -s /bin/zsh
 ```
 
 ※ プロンプトを再起動
 
 ```
-:Lazy build telescope-fzf-native.nvim
+vim
 ```
 
