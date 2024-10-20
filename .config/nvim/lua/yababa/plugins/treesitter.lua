@@ -42,7 +42,15 @@ return {
         "query",
         "vimdoc",
         "c",
+        "cpp",
       },
+      -- automatically install missing parsers when entering buffer
+      sync_install = false,
+      -- list of parsers to ignore installing
+      ignore_install = {},
+      -- additional modules can be defined here (if needed)
+      modules = {},
+      -- enable incremental selection
       incremental_selection = {
         enable = true,
         keymaps = {

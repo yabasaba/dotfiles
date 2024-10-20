@@ -37,3 +37,19 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
+-- format onsave for cpp
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = { "*.cpp", "*.h" },
+  callback = function()
+    vim.lsp.buf.format({ async = false })
+  end,
+})
+
+-- cpp complie and execute
+function _run_cpp_file()
+  local file = vim.fn.expand("%:p")
+  local output = vim.fn.expand("%:r")
+  local cmd = string.format("g++ %s -o %s && ./%s", file, output, output)
+  vim.cmd("TermExec cmd='" .. cmd .. "'")
+end
+
