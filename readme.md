@@ -110,7 +110,7 @@ new-item lua/yababa/lazy.lua
 
 ```
 sudo apt update
-sudo apt install neovim build-essential fzf git
+sudo apt install neovim build-essential fzf git unzip
 ```
 
 ## zsh setup
