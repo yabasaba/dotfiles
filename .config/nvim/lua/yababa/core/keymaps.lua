@@ -24,5 +24,9 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) -- g
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) -- open previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) -- move current buffer to new tab
 
-keymap.set("n", "<leader>r", _run_cpp_file, { desc = "Complie and Run C++ file", noremap = true, silent = true })
+-- toggleterm
+keymap.set("n", "<leader>t", ":ToggleTerm<CR>", { desc = "Open the terminal" }) -- open the terminal
+
+-- cpp run
+keymap.set("n", "<leader>cr", _run_cpp_file, { desc = "Complie and Run C++ file", noremap = true, silent = true })
 

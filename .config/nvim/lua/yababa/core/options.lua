@@ -48,8 +48,8 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 -- cpp complie and execute
 function _run_cpp_file()
   local file = vim.fn.expand("%:p")
-  local output = vim.fn.expand("%:r")
-  local cmd = string.format("g++ %s -o %s && ./%s", file, output, output)
-  vim.cmd("TermExec cmd='" .. cmd .. "'")
+  local output = vim.fn.expand("%:p:r")
+  local cmd = string.format("g++ %s -o %s && %s", file, output, output)
+  vim.cmd("ToggleTerm cmd='" .. cmd .. "'")
 end
 
