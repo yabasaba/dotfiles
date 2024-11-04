@@ -6,7 +6,7 @@ return {
       null_ls.setup({
         sources = {
           null_ls.builtins.formatting.clang_format.with({
-            extra_args = { "--style", "llvm"}
+            extra_args = { "--style", "Microsoft", "IndentWidth", "4"}
           })
         }
       })

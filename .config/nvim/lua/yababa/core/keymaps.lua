@@ -2,8 +2,6 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap -- fore conciseness
 
-keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
-
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 keymap.set("t", "<ESC>", [[<C-\><C-n>]], { desc = "Exit terminal mode with ESC" })
@@ -25,8 +23,8 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) -- move current buffer to new tab
 
 -- toggleterm
-keymap.set("n", "<leader>t", ":ToggleTerm<CR>", { desc = "Open the terminal" }) -- open the terminal
+keymap.set("n", "<leader>tt", ":ToggleTerm<CR>", { desc = "Open/Close the terminal" }) -- open the terminal
 
 -- cpp run
-keymap.set("n", "<leader>cr", _run_cpp_file, { desc = "Complie and Run C++ file", noremap = true, silent = true })
+keymap.set("n", "<leader>r", _run_cpp_file, { desc = "Complie and Run C++ file", noremap = true, silent = true })
 
